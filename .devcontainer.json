@@ -3,8 +3,7 @@
         "args": {
             "VCS_REF": "${localEnv:VCS_REF}"
         },
-        "context": ".",
-        "dockerfile": "Dockerfile"
+        "context": "."
     },
     "customizations": {
         "vscode": {
