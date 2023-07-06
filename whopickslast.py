@@ -33,11 +33,12 @@ def play_one_game(n_flags):
         player1.append(player1_pick)
         count = count - player1_pick
         if count == 0:
-            print('Player1 has won')
-            print(player1)
-            print(player2)
+            #print('Player1 has won')
+            #print(player1)
+            #print(player2)
             results['Player1'] = player1
             results['Player2'] = player2
+            results['Winner'] = 'Player1'
             break
         if count <= 3:
             player2_pick = count
@@ -46,11 +47,12 @@ def play_one_game(n_flags):
         player2.append(player2_pick)
         count = count - player2_pick
         if count == 0:
-            print('Player2 has won')
-            print(player1)
-            print(player2)
+            #print('Player2 has won')
+            #print(player1)
+            #print(player2)
             results['Player1'] = player1
             results['Player2'] = player2
+            results['Winner'] = 'Player2'
             break
         flags_remaining.append(count)
         results['Flags Remaining'] = flags_remaining
