@@ -21,6 +21,8 @@ def play_one_game(n_flags):
     Both players pick randomly until there are 3 or fewer flags remain
     """
     count = n_flags
+    player1_wins = 0
+    player2_wins = 0
     flags_remaining = []
     player1 = []
     player2 = []
@@ -39,6 +41,7 @@ def play_one_game(n_flags):
             results['Player1'] = player1
             results['Player2'] = player2
             results['Winner'] = 'Player1'
+            player1_wins = player1_wins + 1
             break
         if count <= 3:
             player2_pick = count
@@ -53,6 +56,7 @@ def play_one_game(n_flags):
             results['Player1'] = player1
             results['Player2'] = player2
             results['Winner'] = 'Player2'
+            player2_wins = player2_wins + 1
             break
         flags_remaining.append(count)
         results['Flags Remaining'] = flags_remaining
