@@ -49,14 +49,14 @@ def play_one_game(n_flags):
             player2_pick = count
         else:
             player2_pick = random.randint(1,3)
-        player2.append(player2_pick)
+        player2_picks.append(player2_pick)
         count = count - player2_pick
         if count == 0:
             #print('Player2 has won')
             #print(player1)
             #print(player2)
-            results['Player1'] = player1
-            results['Player2'] = player2
+            results['Player1'] = player1_picks
+            results['Player2'] = player2_picks
             results['Winner'] = 'Player2'
             break
         flags_remaining.append(count)
@@ -64,7 +64,7 @@ def play_one_game(n_flags):
     return results
 
 
-def random_pick(count, player, results):
+def random_pick(count, player_picks, results):
     """
     Player picks randomly: 1, 2, or 3 flags.
     """
@@ -72,14 +72,14 @@ def random_pick(count, player, results):
         player_pick = count
     else:
         player_pick = random.randint(1,3)
-    player.append(player_pick)
+    player_picks.append(player_pick)
     count = count - player_pick
     if count == 0:
         #print('Player1 has won')
         #print(player1)
         #print(player2)
-        results['Player1'] = player1
-        results['Player2'] = player2
+        results['Player1'] = player1_picks
+        results['Player2'] = player2_picks
         results['Winner'] = 'Player1'
         break
 
