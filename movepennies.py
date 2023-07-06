@@ -8,10 +8,12 @@ def main():
     main program
     """
     starting_board = [4,3,2,1]
+    new
     moves = one_move()
     for i in starting_board:
         new_board[i] = starting_board[i] - moves[i]
-    print(starting_board - moves)
+    print(moves)
+    print(new_board)
 
 def one_move():
     """
