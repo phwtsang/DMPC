@@ -15,12 +15,12 @@ def one_move():
     plays one move
     """
     moves = []
-    sum = 0
+    sum_moves = 0
     for _ in range(4):
         move = random.randint(0,1)
         moves.append(move)
-        sum +=move
-    if sum == 0:
+        sum_moves +=move
+    if sum_moves == 0:
         return moves
     else:
         return moves
