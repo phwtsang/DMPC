@@ -9,6 +9,8 @@ def main():
     """
     starting_board = [4,3,2,1]
     moves = one_move()
+    for i in starting_board:
+        new_board[i] = starting_board[i] - moves[i]
     print(starting_board - moves)
 
 def one_move():
