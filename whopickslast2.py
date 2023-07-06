@@ -17,7 +17,7 @@ def main():
     my_file = open('results.csv', 'w')
     writer = csv.writer(my_file)
     writer.writerow(['Player1', 'Player2', 'Flags Remaining', 'Winner'])
-    for _ in range(10000):
+    for _ in range(10):
         results = play_one_game(n_flags)
         if results['Winner'] == 'Player1':
             player1_wins +=1
@@ -25,7 +25,6 @@ def main():
             player2_wins +=1
         #print(results)
         writer.writerow([results['Player1'], results['Player2'], results['Flags Remaining'], results['Winner']])
-
     print('Player1 wins:',player1_wins,'Player2 wins:',player2_wins)
     my_file.close()
 
