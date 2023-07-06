@@ -20,6 +20,8 @@ def one_move():
         move = random.randint(0,1)
         moves.append(move)
         sum +=move
+    if sum == 0:
+        return movies
     return moves
 
 main()
