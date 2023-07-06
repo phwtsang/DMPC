@@ -53,7 +53,8 @@ def play_one_game(n_flags):
             results['Player2'] = player2
             break
         flags_remaining.append(count)
-    return flags_remaining
+        results['Flags Remaining'] = flags_remaining
+    return results
 
 
 main()
