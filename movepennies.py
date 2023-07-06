@@ -8,7 +8,8 @@ def main():
     main program
     """
     starting_board = [4,3,2,1]
-    print(one_move())
+    moves = one_move()
+    print(starting_board - moves)
 
 def one_move():
     """
