@@ -71,9 +71,9 @@ def random_pick(count, player, results):
     if count <= 3:
         player_pick = count
     else:
-        player1_pick = random.randint(1,3)
-    player1.append(player1_pick)
-    count = count - player1_pick
+        player_pick = random.randint(1,3)
+    player.append(player_pick)
+    count = count - player_pick
     if count == 0:
         #print('Player1 has won')
         #print(player1)
