@@ -11,7 +11,7 @@ def main():
     Player who picks the last flag wins.
     """
     n_flags = 21
-    for _ in range(10):
+    for _ in range(5):
         print(play_one_game(n_flags))
 
 
@@ -32,6 +32,8 @@ def play_one_game(n_flags):
         count = count - player1_pick
         if count == 0:
             print('Player1 has won')
+            print(player1)
+            print(player2)
             break
         if count <= 3:
             player2_pick = count
@@ -41,9 +43,10 @@ def play_one_game(n_flags):
         count = count - player2_pick
         if count == 0:
             print('Player2 has won')
+            print(player1)
+            print(player2)
             break
         flags_remaining.append(count)
-        #print(player1_pick, player2_pick)
     return flags_remaining
 
 
