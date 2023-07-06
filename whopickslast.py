@@ -2,6 +2,7 @@
 import required modules
 """
 import random
+import csv
 
 
 def main():
@@ -13,6 +14,8 @@ def main():
     n_flags = 21
     player1_wins = 0
     player2_wins = 0
+    myFile = open('results.csv', 'w')
+    writer = csv.write(myFile)
     for _ in range(5):
         results = play_one_game(n_flags)
         if results['Winner'] == 'Player1':
@@ -20,6 +23,7 @@ def main():
         else:
             player2_wins +=1
         print(results)
+        
     print('Player1 wins:',player1_wins,'Player2 wins:',player2_wins)
 
 
