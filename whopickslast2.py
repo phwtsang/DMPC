@@ -33,7 +33,8 @@ def main():
 def play_one_game(n_flags):
     """
     Player take turns to pick flage until a winner is determined
-    Both players pick randomly until there are 3 or fewer flags remain
+    Player 1 picks strategically.
+    Player 2 picks randomly until there are 3 or fewer flags remain.
     """
     count = n_flags
     flags_remaining = []
