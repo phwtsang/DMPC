@@ -15,8 +15,11 @@ def one_move():
     plays one move
     """
     moves = []
+    sum = 0
     for _ in range(4):
-        moves.append(random.randint(0,1))
+        move = random.randint(0,1)
+        moves.append(move)
+        sum +=move
     return moves
 
 main()
