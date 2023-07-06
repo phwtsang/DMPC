@@ -44,20 +44,7 @@ def play_one_game(n_flags):
     while True:
         random_pick(count, player1, results)
         random_pick(count, player2, results)
-        if count <= 3:
-            player1_pick = count
-        else:
-            player1_pick = random.randint(1,3)
-        player1.append(player1_pick)
-        count = count - player1_pick
-        if count == 0:
-            #print('Player1 has won')
-            #print(player1)
-            #print(player2)
-            results['Player1'] = player1
-            results['Player2'] = player2
-            results['Winner'] = 'Player1'
-            break
+
         if count <= 3:
             player2_pick = count
         else:
@@ -75,6 +62,23 @@ def play_one_game(n_flags):
         flags_remaining.append(count)
         results['Flags Remaining'] = flags_remaining
     return results
+
+
+def random_pick(count, player, results):
+    if count <= 3:
+            player1_pick = count
+        else:
+            player1_pick = random.randint(1,3)
+        player1.append(player1_pick)
+        count = count - player1_pick
+        if count == 0:
+            #print('Player1 has won')
+            #print(player1)
+            #print(player2)
+            results['Player1'] = player1
+            results['Player2'] = player2
+            results['Winner'] = 'Player1'
+            break
 
 
 main()
