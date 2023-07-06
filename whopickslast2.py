@@ -45,7 +45,7 @@ def play_one_game(n_flags):
         if count <= 3:
             player1_pick = count
         else:
-            player1_pick = random.randint(1,3)
+            player1_pick = count%4
         player1.append(player1_pick)
         count = count - player1_pick
         if count == 0:
