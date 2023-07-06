@@ -21,7 +21,8 @@ def one_move():
         moves.append(move)
         sum +=move
     if sum == 0:
-        return movies
-    return moves
+        return moves
+    else:
+        return moves
 
 main()
