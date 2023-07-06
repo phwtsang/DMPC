@@ -27,6 +27,7 @@ def main():
         writer.writerow([results['Player1'], results['Player2'], results['Flags_Remaining'], results['Winner']])
 
     print('Player1 wins:',player1_wins,'Player2 wins:',player2_wins)
+    my
 
 
 def play_one_game(n_flags):
