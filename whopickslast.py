@@ -24,6 +24,7 @@ def play_one_game(n_flags):
     flags_remaining = []
     player1 = []
     player2 = []
+    results = {}
     while True:
         if count <= 3:
             player1_pick = count
@@ -35,6 +36,8 @@ def play_one_game(n_flags):
             print('Player1 has won')
             print(player1)
             print(player2)
+            results['Player1'] = player1
+            results['Player2'] = player2
             break
         if count <= 3:
             player2_pick = count
@@ -46,6 +49,8 @@ def play_one_game(n_flags):
             print('Player2 has won')
             print(player1)
             print(player2)
+            results['Player1'] = player1
+            results['Player2'] = player2
             break
         flags_remaining.append(count)
     return flags_remaining
