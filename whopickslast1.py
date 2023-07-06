@@ -65,8 +65,11 @@ def play_one_game(n_flags):
 
 
 def random_pick(count, player, results):
+    """
+    Player picks randomly: 1, 2, or 3 flags.
+    """
     if count <= 3:
-        player1_pick = count
+        player_pick = count
     else:
         player1_pick = random.randint(1,3)
     player1.append(player1_pick)
