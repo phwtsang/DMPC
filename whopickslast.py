@@ -11,8 +11,11 @@ def main():
     Player who picks the last flag wins.
     """
     n_flags = 21
+    player1_wins = 0
+    player2_wins = 0
     for _ in range(5):
         print(play_one_game(n_flags))
+        if play_one_game
 
 
 def play_one_game(n_flags):
@@ -21,8 +24,6 @@ def play_one_game(n_flags):
     Both players pick randomly until there are 3 or fewer flags remain
     """
     count = n_flags
-    player1_wins = 0
-    player2_wins = 0
     flags_remaining = []
     player1 = []
     player2 = []
