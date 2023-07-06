@@ -6,7 +6,7 @@ import random
 
 def main():
     """
-    Starts with n flags.
+    Starts with n_flags flags.
     Two players takes turn to remove 1, 2,or 3 flags.
     Player who picks the last flag wins.
     """
@@ -18,6 +18,7 @@ def main():
 def play_one_game(n_flags):
     """
     Player take turns to pick flage until a winner is determined
+    Both players pick randomly until there are 3 or fewer flags remain
     """
     count = n_flags
     flags_remaining = []
