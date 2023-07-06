@@ -66,19 +66,19 @@ def play_one_game(n_flags):
 
 def random_pick(count, player, results):
     if count <= 3:
-            player1_pick = count
-        else:
-            player1_pick = random.randint(1,3)
-        player1.append(player1_pick)
-        count = count - player1_pick
-        if count == 0:
-            #print('Player1 has won')
-            #print(player1)
-            #print(player2)
-            results['Player1'] = player1
-            results['Player2'] = player2
-            results['Winner'] = 'Player1'
-            break
+        player1_pick = count
+    else:
+        player1_pick = random.randint(1,3)
+    player1.append(player1_pick)
+    count = count - player1_pick
+    if count == 0:
+        #print('Player1 has won')
+        #print(player1)
+        #print(player2)
+        results['Player1'] = player1
+        results['Player2'] = player2
+        results['Winner'] = 'Player1'
+        break
 
 
 main()
