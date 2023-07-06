@@ -10,6 +10,7 @@ def main():
     starting_board = [4,3,2,1]
     new_board = [0,0,0,0]
     moves = one_move()
+    print(moves)
     for i in starting_board:
         new_board[i] = starting_board[i] - moves[i]
     print(moves)
