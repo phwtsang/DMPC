@@ -14,8 +14,13 @@ def main():
     player1_wins = 0
     player2_wins = 0
     for _ in range(5):
-        print(play_one_game(n_flags))
-        if play_one_game
+        results = play_one_game(n_flags)
+        if results['Winner'] == 'Player1':
+            player1_wins +=1
+        else:
+            player2_wins +=1
+        print(results)
+    print('Player1 wins:',player1_wins,'Player2 wins:',player2_wins)
 
 
 def play_one_game(n_flags):
@@ -42,7 +47,6 @@ def play_one_game(n_flags):
             results['Player1'] = player1
             results['Player2'] = player2
             results['Winner'] = 'Player1'
-            player1_wins = player1_wins + 1
             break
         if count <= 3:
             player2_pick = count
@@ -57,7 +61,6 @@ def play_one_game(n_flags):
             results['Player1'] = player1
             results['Player2'] = player2
             results['Winner'] = 'Player2'
-            player2_wins = player2_wins + 1
             break
         flags_remaining.append(count)
         results['Flags Remaining'] = flags_remaining
