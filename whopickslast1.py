@@ -41,8 +41,9 @@ def play_one_game(n_flags):
     player1 = []
     player2 = []
     results = {}
-    random_pick()
     while True:
+        random_pick(count, player1, results)
+        random_pick(count, player2, results)
         if count <= 3:
             player1_pick = count
         else:
