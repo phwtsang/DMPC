@@ -24,7 +24,7 @@ def main():
         else:
             player2_wins +=1
         print(results)
-        writer.writerow([results['Player1'], results['Player2'], results['Flags_Remaining'], results['Winner']])
+        writer.writerow([results['Player1'], results['Player2'], results['Flags Remaining'], results['Winner']])
 
     print('Player1 wins:',player1_wins,'Player2 wins:',player2_wins)
     my_file.close()
