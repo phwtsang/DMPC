@@ -18,3 +18,5 @@ def one_move():
     for _ in range(4):
         moves.append(random.randint(0,1))
     return moves
+
+main()
