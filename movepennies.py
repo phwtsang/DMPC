@@ -22,13 +22,11 @@ def one_move():
     """
     moves = []
     sum_moves = 0
-    for _ in range(4):
-        move = random.randint(0,1)
-        moves.append(move)
-        sum_moves +=move
-    if sum_moves == 0:
-        return moves
-    else:
-        return moves
+    while sum_moves == 0:
+        for _ in range(4):
+            move = random.randint(0,1)
+            moves.append(move)
+            sum_moves +=move
+    return moves
 
 main()
