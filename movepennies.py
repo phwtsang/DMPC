@@ -10,12 +10,13 @@ def main():
     starting_board = [4,3,2,1]
     print(starting_board)
     new_board = starting_board
-    moves = one_move()
-    print(moves)
-    for i in range(len(starting_board)):
-        new_board[i] = starting_board[i] - moves[i]
-    #print(moves)
-    print(new_board, moves)
+    for _ in range(3):
+        moves = one_move()
+        #print(moves)
+        for i in range(len(starting_board)):
+            new_board[i] = starting_board[i] - moves[i]
+        #print(moves)
+        print(new_board, moves)
 
 def one_move():
     """
