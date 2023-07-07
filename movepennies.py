@@ -8,8 +8,16 @@ def main():
     main program
     """
     starting_board = [4,3,2,1]
+    one_game(starting_board)
+
+
+def one_game(starting_board):
+    """
+    Plays one game.
+    """
     print(starting_board)
     new_board = starting_board
+    sum_board = sum(new_board)
     for _ in range(3):
         moves = one_move()
         #print(moves)
@@ -20,15 +28,17 @@ def main():
             else:
                 new_board[i] = updated
         #print(moves)
+        for i in new_board:
+            sum_board +=i
         print(new_board, moves)
 
 def one_move():
     """
     plays one move
     """
-    moves = []
     sum_moves = 0
     while sum_moves == 0:
+        moves = []
         for _ in range(4):
             move = random.randint(0,1)
             moves.append(move)
