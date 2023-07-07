@@ -8,7 +8,7 @@ def main():
     main program
     """
     starting_board = [4,3,2,1]
-    new_board = [0,0,0,0]
+    new_board = starting_board
     moves = one_move()
     print(moves)
     for i in range(len(starting_board)):
