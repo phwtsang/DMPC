@@ -15,7 +15,10 @@ def main():
         #print(moves)
         for i in range(len(starting_board)):
             updated = starting_board[i] - moves[i]
-            new_board[i] =
+            if updated <= 0:
+                new_board[i] = 0
+            else:
+                new_board[i] = updated
         #print(moves)
         print(new_board, moves)
 
