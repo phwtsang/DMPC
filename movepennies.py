@@ -18,7 +18,7 @@ def one_game(starting_board):
     print(starting_board)
     new_board = starting_board
     sum_board = sum(new_board)
-    for _ in range(3):
+    while sum_board > 0:
         moves = one_move()
         #print(moves)
         for i in range(len(starting_board)):
@@ -28,9 +28,8 @@ def one_game(starting_board):
             else:
                 new_board[i] = updated
         #print(moves)
-        for i in new_board:
-            sum_board +=i
-        print(new_board, moves)
+        sum_board = sum(new_board)
+        print(new_board)
 
 def one_move():
     """
