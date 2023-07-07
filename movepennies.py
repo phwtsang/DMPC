@@ -36,6 +36,7 @@ def one_move(new_board):
     plays one move
     """
     sum_moves = 0
+    for i in new_board
     while sum_moves == 0:
         moves = []
         for _ in range(4):
