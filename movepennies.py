@@ -14,7 +14,8 @@ def main():
         moves = one_move()
         #print(moves)
         for i in range(len(starting_board)):
-            new_board[i] = starting_board[i] - moves[i]
+            updated = starting_board[i] - moves[i]
+            new_board[i] =
         #print(moves)
         print(new_board, moves)
 
