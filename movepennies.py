@@ -26,7 +26,7 @@ def one_game(starting_board):
     Plays one game.
     """
     print(starting_board)
-    new_board = starting_board
+    new_board = [4,3,2,1]
     sum_board = sum(new_board)
     player = 0
     move_count = 0
