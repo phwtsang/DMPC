@@ -8,7 +8,8 @@ def main():
     main program
     """
     starting_board = [4,3,2,1]
-    one_game(starting_board)
+    for _ in range(10):
+        one_game(starting_board)
 
 
 def one_game(starting_board):
