@@ -10,11 +10,11 @@ def main():
     player1_wins = 0
     player2_wins = 0
     #starting_board = [4,3,2,1]
-    for i in range(10):
+    for i in range(10000):
         starting_board = [4,3,2,1]
-        print(i, 'START')
+        #print(i, 'START')
         winner = one_game(starting_board)
-        print(i, 'END')
+        #print(i, 'END')
         if winner == 1:
             player1_wins +=1
         else:
@@ -26,7 +26,7 @@ def one_game(starting_board):
     """
     Plays one game.
     """
-    print(starting_board)
+    #print(starting_board)
     new_board = starting_board
     sum_board = sum(new_board)
     player = 0
@@ -44,7 +44,7 @@ def one_game(starting_board):
                 new_board[i] = updated
         #print(moves)
         sum_board = sum(new_board)
-        print(new_board, player)
+        #print(new_board, player)
     return player
 
 def one_move(new_board):
