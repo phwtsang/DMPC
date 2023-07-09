@@ -7,9 +7,16 @@ def main():
     """
     main program
     """
+    player1_wins = 0
+    player2_wins = 0
     starting_board = [4,3,2,1]
     for _ in range(10):
-        one_game(starting_board)
+        winner = one_game(starting_board)
+        if winner == 1:
+            player1_wins +=1
+        else:
+            player2_wins +=1
+    print(player1_wins, player2_wins)
 
 
 def one_game(starting_board):
@@ -34,6 +41,7 @@ def one_game(starting_board):
         #print(moves)
         sum_board = sum(new_board)
         print(new_board, player)
+    return player
 
 def one_move(new_board):
     """
