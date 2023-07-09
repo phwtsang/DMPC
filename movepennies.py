@@ -10,7 +10,7 @@ def main():
     player1_wins = 0
     player2_wins = 0
     #starting_board = [4,3,2,1]
-    for i in range(10000):
+    for _ in range(10000):
         starting_board = [4,5,4,5]
         #print(i, 'START')
         winner = one_game(starting_board)
@@ -39,8 +39,16 @@ def one_game(starting_board):
         else:
             moves = one_move_random(new_board)
         #print(moves)
+        """
         for i in range(len(starting_board)):
             updated = starting_board[i] - moves[i]
+            if updated <= 0:
+                new_board[i] = 0
+            else:
+                new_board[i] = updated
+        """
+        for i, number in enumerate(starting_board):
+            updated = number - moves[i]
             if updated <= 0:
                 new_board[i] = 0
             else:
