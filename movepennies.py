@@ -34,7 +34,10 @@ def one_game(starting_board):
     while sum_board > 0:
         move_count +=1
         player = move_count%2
-        moves = one_move_random(new_board)
+        if player == 1:
+            moves = one_move_strategic(new_board)
+        else:
+            moves = one_move_random(new_board)
         #print(moves)
         for i in range(len(starting_board)):
             updated = starting_board[i] - moves[i]
@@ -46,6 +49,21 @@ def one_game(starting_board):
         sum_board = sum(new_board)
         #print(new_board, player)
     return player
+
+def one_move_strategic(new_board):
+    """
+    plays one move randomly
+    """
+    sum_moves = 0
+    while sum_moves == 0:
+        moves = []
+        for i in range(4):
+            move = random.randint(0,1)
+            moves.append(move)
+            # only count move when penny is not at the bottom
+            if new_board[i] != 0:
+                sum_moves +=move
+    return moves
 
 def one_move_random(new_board):
     """
