@@ -38,10 +38,12 @@ def one_move(new_board):
     sum_moves = 0
     while sum_moves == 0:
         moves = []
-        for _ in range(4):
+        for i in range(4):
             move = random.randint(0,1)
             moves.append(move)
-            sum_moves +=move
+            # only count move when penny is not at the bottom
+            if new_board[i] != 0:
+                sum_moves +=move
     return moves
 
 main()
