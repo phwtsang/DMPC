@@ -10,8 +10,8 @@ def main():
     player1_wins = 0
     player2_wins = 0
     #starting_board = [4,3,2,1]
-    for i in range(100000):
-        starting_board = [4,4,4,4]
+    for i in range(10000):
+        starting_board = [4,5,4,5]
         #print(i, 'START')
         winner = one_game(starting_board)
         #print(i, 'END')
