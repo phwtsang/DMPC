@@ -9,8 +9,9 @@ def main():
     """
     player1_wins = 0
     player2_wins = 0
-    starting_board = [4,3,2,1]
+    #starting_board = [4,3,2,1]
     for i in range(2):
+        starting_board = [4,3,2,1]
         print(i, starting_board)
         winner = one_game(starting_board)
         print(i, 'END')
