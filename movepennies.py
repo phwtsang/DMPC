@@ -26,6 +26,7 @@ def one_game(starting_board):
     print(starting_board)
     new_board = starting_board
     sum_board = sum(new_board)
+    player = 0
     move_count = 0
     while sum_board > 0:
         move_count +=1
