@@ -10,8 +10,10 @@ def main():
     player1_wins = 0
     player2_wins = 0
     starting_board = [4,3,2,1]
-    for _ in range(2):
+    for i in range(2):
+        print(i, starting_board)
         winner = one_game(starting_board)
+        print(i, 'END')
         if winner == 1:
             player1_wins +=1
         else:
