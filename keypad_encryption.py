@@ -2,9 +2,9 @@
 This program implements the phone keypad encrytion strategy
 """
 KEYPAD_DICT = {
-        2:['a', 'b', 'c'], 3:['d', 'e', 'f'], 4:['g', 'h', 'i'],
-        5:['j', 'k', 'l'], 6:['m', 'n', 'o'], 7:['p', 'q', 'r', 's'],
-        8:['t', 'u', 'v'], 9:['w', 'x', 'y', 'z']
+        '2':['a', 'b', 'c'], '3':['d', 'e', 'f'], '4':['g', 'h', 'i'],
+        '5':['j', 'k', 'l'], '6':['m', 'n', 'o'], '7':['p', 'q', 'r', 's'],
+        '8':['t', 'u', 'v'], '9':['w', 'x', 'y', 'z']
     }
 
 def main():
@@ -33,7 +33,8 @@ def decrypt(input_text):
     list_text = input_text.split(',')
     for letter in list_text:
         key = letter[0]
-    print(list_text)
+        key_letter = KEYPAD_DICT[key]
+        print(key_letter)
     return 'decrypt'
 
 main()
