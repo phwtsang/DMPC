@@ -32,7 +32,7 @@ def decrypt(input_text):
     """
     list_text = input_text.split(',')
     for letter in list_text:
-        key
+        key = letter[0]
     print(list_text)
     return 'decrypt'
 
