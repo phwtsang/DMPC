@@ -33,7 +33,9 @@ def decrypt(input_text):
     list_text = input_text.split(',')
     for letter in list_text:
         key = letter[0]
-        key_letter = KEYPAD_DICT[key]
+        key_value = int(letter[2:])
+        key_letter_list = KEYPAD_DICT[key]
+        key_letter = key_letter_list[key_value - 1]
         print(key_letter)
     return 'decrypt'
 
