@@ -32,17 +32,17 @@ def decrypt(input_text):
     """
     sentence = ''
     list_words = input_text.split(' ')
-    print('list_words', list_words)
+    #print('list_words', list_words)
     for list_word in list_words:
         list_text = list_word.split(',')
-        print('list_text', list_text)
+        #print('list_text', list_text)
         word = ''
         for letter in list_text:
             key = letter[0]
             key_value = int(letter[2:])
             key_letter_list = KEYPAD_DICT[key]
             key_letter = key_letter_list[key_value - 1]
-            print(key_letter)
+            #print(key_letter)
             word +=key_letter
         sentence +=' '
         sentence +=word
