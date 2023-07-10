@@ -35,7 +35,7 @@ def decrypt(input_text):
     print('list_words', list_words)
     for list_word in list_words:
         list_text = list_word.split(',')
-        
+        print('list_text', list_text)
         word = ''
         for letter in list_text:
             key = letter[0]
