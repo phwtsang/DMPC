@@ -44,6 +44,7 @@ def decrypt(input_text):
             key_letter = key_letter_list[key_value - 1]
             print(key_letter)
             word +=key_letter
+        sentence +=' '
         sentence +=word
     return sentence
 
