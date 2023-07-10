@@ -31,12 +31,14 @@ def decrypt(input_text):
     undo keypad encryption
     """
     list_text = input_text.split(',')
+    word = ''
     for letter in list_text:
         key = letter[0]
         key_value = int(letter[2:])
         key_letter_list = KEYPAD_DICT[key]
         key_letter = key_letter_list[key_value - 1]
         print(key_letter)
-    return 'decrypt'
+        word +=key_letter
+    return word
 
 main()
