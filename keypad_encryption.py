@@ -31,6 +31,8 @@ def decrypt(input_text):
     undo keypad encryption
     """
     list_text = input_text.split(',')
+    for letter in list_text:
+        key
     print(list_text)
     return 'decrypt'
 
