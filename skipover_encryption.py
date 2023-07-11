@@ -20,7 +20,10 @@ def encrypt(input_text):
     implement the skip-over encryption algorithm
     """
     output_text = ''
-    return None
+    input_list = input_text.split()
+
+    for char in input_text
+    return output_text
 
 def decrypt(input_text):
     """
