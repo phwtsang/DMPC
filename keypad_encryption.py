@@ -42,8 +42,7 @@ def decrypt(input_text):
             #key_value = int(letter[2:])
             key_letters = KEYPAD_DICT[key]
             key_value = int(letter[2:])%len(key_letters)
-            key_letter_list = KEYPAD_DICT[key]
-            key_letter = key_letter_list[key_value - 1]
+            key_letter = key_letters[key_value - 1]
             #print(key_letter)
             word +=key_letter
         sentence +=' '
