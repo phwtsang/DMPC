@@ -1,4 +1,7 @@
 def main():
+    """
+    implement the skip-over encryption algorithm
+    """
     choice = input('Encrytion (e) or Decryption (d): ')
     if choice == 'e':
         input_text = input('Enter plaintext: ')
@@ -7,4 +10,14 @@ def main():
         input_text = input('Enter cyphertext: ')
         output = decrypt(input_text)
 
-def encrypt()
+def encrypt(input_text):
+    """
+    implement the skip-over encryption algorithm
+    """
+    pass
+
+def decrypt(input_text):
+    """
+    implement the skip-over encryption algorithm
+    """
+    pass
