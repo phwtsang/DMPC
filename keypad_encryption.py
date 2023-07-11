@@ -24,9 +24,11 @@ def encrypt(input_text):
     apply keypad encryption
     """
     for letter in input_text:
+        code = ''
         for key, val in KEYPAD_DICT.items():
             if letter in val:
-                print(key)
+                #print(key)
+                code += (key+': ,')
 
     print(input_text)
     return 'encrypt'
