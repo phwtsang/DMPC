@@ -23,6 +23,7 @@ def encrypt(input_text):
     """
     apply keypad encryption
     """
+    for item
     print(input_text)
     return 'encrypt'
 
