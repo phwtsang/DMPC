@@ -28,6 +28,8 @@ def encrypt(input_text):
         for key, val in KEYPAD_DICT.items():
             if letter in val:
                 print(key)
+                for i, number in enumerate(val):
+                    if
                 word = word + key + ':' + 'i' + ','
 
     print(input_text)
