@@ -40,7 +40,8 @@ def decrypt(input_text):
         for letter in list_text:
             key = letter[0]
             #key_value = int(letter[2:])
-            key_value = int(letter[2:])%
+            key_letters = KEYPAD_DICT[key]
+            key_value = int(letter[2:])%len(key_letters)
             key_letter_list = KEYPAD_DICT[key]
             key_letter = key_letter_list[key_value - 1]
             #print(key_letter)
