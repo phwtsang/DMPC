@@ -34,7 +34,7 @@ def encrypt(input_text):
                     #print(key, i)
                     encrypted_word = encrypted_word + key + ':' + str(i) + ','
         #print(encrypted_word)
-        encrypted_sentence += encrypted_word + ' '
+        encrypted_sentence += encrypted_word[:-1] + ' '
     return encrypted_sentence
 
 def decrypt(input_text):
