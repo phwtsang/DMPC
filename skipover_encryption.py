@@ -30,6 +30,7 @@ def decrypt(input_text):
     """
     implement the skip-over encryption algorithm
     """
-    return None
+    output_text = input_text
+    return output_text
 
 main()
