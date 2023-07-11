@@ -19,6 +19,7 @@ def encrypt(input_text):
     """
     implement the skip-over encryption algorithm
     """
+    output_text = ''
     return None
 
 def decrypt(input_text):
