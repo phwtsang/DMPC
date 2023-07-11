@@ -1,7 +1,10 @@
 def main():
     choice = input('Encrytion (e) or Decryption (d): ')
     if choice == 'e':
-        output = encrypt(choice)
+        input_text = input('Enter plaintext: ')
+        output = encrypt(input_text)
     else:
-        choice == 'd':
-        output = decrypt(choice)
+        input_text = input('Enter plaintext: ')
+        output = decrypt(input_text)
+
+def encrypt()
