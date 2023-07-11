@@ -4,7 +4,7 @@ def main():
         input_text = input('Enter plaintext: ')
         output = encrypt(input_text)
     else:
-        input_text = input('Enter plaintext: ')
+        input_text = input('Enter cyphertext: ')
         output = decrypt(input_text)
 
 def encrypt()
