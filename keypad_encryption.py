@@ -23,7 +23,7 @@ def encrypt(input_text):
     """
     apply keypad encryption
     """
-    word_list = input_text.split(' ')
+    #word_list = input_text.split(' ')
     encrypted_word = ''
     for letter in input_text:
         for key, val in KEYPAD_DICT.items():
@@ -33,7 +33,7 @@ def encrypt(input_text):
                 encrypted_word = encrypted_word + key + ':' + str(i) + ','
 
     print(input_text)
-    return word
+    return encrypted_word
 
 def decrypt(input_text):
     """
