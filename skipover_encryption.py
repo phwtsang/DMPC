@@ -21,8 +21,9 @@ def encrypt(input_text):
     """
     output_text = ''
     input_list = input_text.split()
+    prinbt
 
-    for char in input_text
+    output_test +=
     return output_text
 
 def decrypt(input_text):
