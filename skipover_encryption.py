@@ -21,12 +21,13 @@ def encrypt(input_text, skip_key):
     """
     implement the skip-over encryption algorithm
     """
+    input_len = len(input_text)
     output_text = ''
     output_list = list(input_text)
     input_list = list(input_text)
     #print(input_list)
     for i,char in enumerate(input_list):
-        list_index = (i*int(skip_key))%11
+        list_index = (i*int(skip_key))%input_len
         print(i, list_index)
         output_list[list_index] = char
     return output_text.join(output_list)
