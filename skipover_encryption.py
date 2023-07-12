@@ -28,7 +28,7 @@ def encrypt(input_text, skip_key):
     #print(input_list)
     for i,char in enumerate(input_list):
         list_index = (i*int(skip_key))%input_len
-        print(i, list_index)
+        #print(i, list_index)
         output_list[list_index] = char
     return output_text.join(output_list)
 
