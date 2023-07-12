@@ -8,6 +8,7 @@ def main():
     choice = input('Encrytion (e) or Decryption (d): ')
     if choice == 'e':
         input_text = input('Enter plaintext: ')
+        print(len(input_text))
         skip_key = input('Enter Skip Key: ')
         output = encrypt(input_text, skip_key)
         print(output)
