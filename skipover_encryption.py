@@ -24,7 +24,7 @@ def encrypt(input_text):
     input_list = list(input_text)
     #print(input_list)
     for i,char in enumerate(input_text):
-        output_list[(i*4)%11] = char
+        output_list[(i*4)%10] = char
     return output_text.join(output_list)
 
 def decrypt(input_text):
