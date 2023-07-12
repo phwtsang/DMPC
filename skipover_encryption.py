@@ -40,7 +40,7 @@ def decrypt(input_text, skip_key):
     input_list = list(input_text)
     #print(input_list)
     for i,char in enumerate(input_list):
-        list_index = (i*int(skip_key))%input_len
+        list_index = (i*(input_len-int(skip_key)))%input_len
         #print(i, list_index)
         output_list[list_index] = char
     return ''.join(output_list)
