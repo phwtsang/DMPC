@@ -22,8 +22,8 @@ def encrypt(input_text):
     output_text = ''
     input_list = list(input_text)
     print(input_list)
-    for char in input_text:
-        output_text = char + output_text
+    for i,char in enumerate(input_text):
+        output_text[i] = char + output_text
     return output_text
 
 def decrypt(input_text):
