@@ -17,12 +17,14 @@ def perm_encrypt():
     """
     perm_encrypt function
     """
-    encrypt_key = input()
+    input_text = input('Enter plaintext: ')
+    encrypt_key = input('Enter encryption key: ')
 
 def perm_decrypt():
     """
     perm_decrypt function
     """
-    pass
+    input_text = input('Enter ciphertext: ')
+    encrypt_key = input('Enter encryption key: ')
 
 main()
