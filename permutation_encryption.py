@@ -8,8 +8,10 @@ def main():
     choice = input('Encryption(e) or Decryption(d): ')
     if choice == 'e':
         print(perm_encrypt())
-    else:
+    elif choice == 'd':
         print(perm_decrypt())
+    else:
+        print("I don't understand your choice.")
 
 def perm_encrypt():
     """
