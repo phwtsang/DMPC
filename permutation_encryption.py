@@ -34,7 +34,7 @@ def perm_decrypt():
     input_list = list(input_text)
     for i, char in enumerate(input_list):
         i_mod = i%key_len
-        print(key_list[i_mod])
+        print(i, i_mod, key_list[i_mod])
         output_list[i] = input_list[int(key_list[i_mod])]
     return ''.join(output_list)
 
