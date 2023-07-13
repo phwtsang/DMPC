@@ -20,6 +20,7 @@ def perm_encrypt():
     input_text = input('Enter plaintext: ')
     encrypt_key = input('Enter encryption key: ')
     key_len = len(encrypt_key)
+    input_list = list(input_text)
 
 def perm_decrypt():
     """
