@@ -18,3 +18,5 @@ def perm_decrypt():
     perm_decrypt function
     """
     pass
+
+main()
