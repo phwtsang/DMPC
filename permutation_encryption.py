@@ -17,7 +17,7 @@ def perm_encrypt():
     """
     perm_encrypt function
     """
-    pass
+    encrypt_key = input()
 
 def perm_decrypt():
     """
