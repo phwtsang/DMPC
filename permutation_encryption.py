@@ -5,7 +5,8 @@ def main():
     """
     main function
     """
-    pass
+    choice = input('Encryption(e) or Decryption(d): ')
+    
 
 def perm_encrypt():
     """
