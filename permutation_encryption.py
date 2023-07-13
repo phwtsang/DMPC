@@ -28,7 +28,10 @@ def perm_decrypt():
     """
     input_text = input('Enter ciphertext: ')
     encrypt_key = input('Enter encryption key: ')
+    key_list = list(encrypt_key)
     key_len = len(encrypt_key)
     input_list = list(input_text)
+    for i, num in enumerate(key_list):
+        
 
 main()
