@@ -28,6 +28,6 @@ def perm_decrypt():
     input_text = input('Enter ciphertext: ')
     encrypt_key = input('Enter encryption key: ')
     key_len = len(encrypt_key)
-
+    input_list = list(input_text)
 
 main()
