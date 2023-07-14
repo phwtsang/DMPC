@@ -23,6 +23,12 @@ def perm_encrypt():
     key_list = list(encrypt_key)
     key_len = len(encrypt_key)
     input_list = list(input_text)
+    for i, char in enumerate(input_list):
+        i_mod = i%key_len
+        i_quotient = i//key_len
+        #print(i, i_mod, int(key_list[i_mod])-1)
+        output_list[i] = input_list[key_len*i_quotient+int(key_list[i_mod])-1]
+    return ''.join(output_list)
 
 def perm_decrypt():
     """
